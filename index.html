@@ -89,7 +89,7 @@
   
   <div class="content">
     <h2><b>Methodology</b></h2>
-    <p>DiCache consists of Online Probe Profiling Strategy and Dynamic Cache Trajectory Alignment. The former dynamically determines the caching timing with an online shallow-layer probe at runtime, while the latter combines multi-step caches based on the probe feature trajectory to adaptively approximate the feature at the current timestep. By integrating the above two techniques, DiCache intrinsically answers when and how to cache in a unified framework.</p>
+    <p>ByTheWay is composed of two principal components: Temporal Self-Guidance and Fourier-based Motion Enhancement, both meticulously engineered to refine the temporal attention module within T2V models. Temporal Self-Guidance leverages the temporal attention map from the preceding block to inform and regulate that of the current block. This approach effectively mitigates the disparity between the temporal attention maps across various decoder blocks, thereby normalizing their disparity. Furthermore, Fourier-based Motion Enhancement modulates the high-frequency components of the temporal attention map, thereby amplifying the energy of the map. This enhancement circumvents the generation of videos that closely resemble static image.</p>
     <div style="text-align: center;">
     <img width="960" src="./FreeScale_files/figs/fig_framework.png">
     </div>
